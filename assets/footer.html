@@ -1,0 +1,187 @@
+<!-- Footer -->
+<div class="container">
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Oskar Rodkiewicz</p>
+                </div>
+            </div>
+        </footer>
+</div>
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+        <script>
+        
+$(document).ready(function() {
+
+  $('.form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+       type: "POST",
+       url: '../logic/logowanie.php',
+       data: $(this).serialize(),
+       success: function(html)
+       {
+          if (html=='true') {
+        if(window.location=='http://xxa.xaa.pl/log-in/')
+        {
+          window.location='http://xxa.xaa.pl/';
+        }
+        else
+        {
+          window.location.reload();
+        }
+             
+          }
+          else if(html=='notactivated') {
+           
+swal({
+  title: "Log in error!",
+  text: "Your account is not activated!",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+    
+          }
+          else if (html=='false')
+          {
+            swal({
+  title: "Log in error!",
+  text: "Wrong email or password!",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+          }
+       }
+   });
+ });
+});
+// adding an event when the user clicks on <td>
+
+    
+ $(document).ready(function() {
+
+  $('#change').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+       type: "POST",
+       url: '../logic/modify.php',
+       data: $(this).serialize(),
+       success: function(html)
+       {
+          if (html=='true') {
+swal({
+  title: "Done!",
+  text: "Password successfully changed!",
+type: "success",
+confirmButtonColor: "#286090"
+
+});            
+
+}
+else if (html=='same'){
+swal({
+  title: "Modify error!",
+  text: "You are trying to change password to one which currently exist!",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+
+}
+          else if(html=='false') {
+           
+swal({
+  title: "Modify error!",
+  text: "Something went wrong!",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+    
+          }
+          else if(html=='empty')
+          {
+            swal({
+  title: "Modify error!",
+  text: "Please, provide necessary data to modify your password!",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+          }
+       }
+   });
+ });
+});
+// adding an event when the user clicks on <td>
+
+    
+
+
+$('.edit').click(function()
+{
+
+
+var val = $(this).attr('query');
+
+     $('.edit').editable('../logic/onfly.php',{
+      
+            submitdata : {query:val },
+      submit : 'OK',
+      style : 'color:black',
+     callback : function() {
+         window.location.reload(); 
+     }
+
+              });
+
+
+
+});
+
+
+
+ $(document).ready(function() {
+
+  $('#mail').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+       type: "POST",
+       url: '../logic/mail.php',
+       data: $(this).serialize(),
+       success: function(html)
+       {
+          if (html=='true') {
+swal({
+  title: "Done!",
+  text: "E-mail successfully sent!",
+type: "success",
+confirmButtonColor: "#286090"
+
+});            
+
+}else if(html=='false') {
+           
+swal({
+  title: "E-mail error!",
+  text: "Something went wrong! Contact with us by Steam.",
+type: "error",
+confirmButtonColor: "#286090"
+
+});
+      }
+
+       }
+   });
+ });
+});
+
+
+</script>
+   

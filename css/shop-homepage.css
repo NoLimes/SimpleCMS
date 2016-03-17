@@ -1,0 +1,219 @@
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+h2 {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+.active{
+    color:black;
+}
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    color:white;
+  /* background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCI+CjxmaWx0ZXIgaWQ9Im4iIHg9IjAiIHk9IjAiPgo8ZmVUdXJidWxlbmNlIHR5cGU9ImZyYWN0YWxOb2lzZSIgYmFzZUZyZXF1ZW5jeT0iMC43IiBudW1PY3RhdmVzPSIxMCIgc3RpdGNoVGlsZXM9InN0aXRjaCI+PC9mZVR1cmJ1bGVuY2U+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzAwMCI+PC9yZWN0Pgo8cmVjdCB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgZmlsdGVyPSJ1cmwoI24pIiBvcGFjaXR5PSIwLjQiPjwvcmVjdD4KPC9zdmc+");
+*/
+    background-color: rgb(57, 58, 59);
+ font-family: 'Arial Narrow', sans-serif;
+
+}
+
+.panel-body
+{
+color:black;
+}
+.slide-image {
+    width: 100%;
+ 
+border-radius: 0px !important;
+}
+.img
+{
+ border-radius: 0px !important;   
+}
+.thumbnail
+{
+ border-radius: 0px !important;   
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+footer {
+    margin: 50px 0;
+}
+.jumbotron
+{
+    border-radius: 0px !important;
+    /*background-color:#121414;*/
+    background: rgba(0, 0, 0, 0.35);
+     
+     padding-right: 30px !important;
+     padding-left: 30px !important;
+     
+}
+.tmp{
+
+}
+.wrap
+{
+    display: flex !important;
+    flex-direction: row;
+}
+/* GLITCH TEXT */
+@media screen and (min-width: 480px) {
+    .parallax-window {
+        display:hidden;
+    }
+}
+   
+.parallax-window {
+    
+    min-height: 400px;
+    background: transparent;
+    margin-top: -25px;
+}
+
+.break{
+    -ms-word-break: break-all;
+    word-break: break-all;
+
+ /* Non standard for webkit */
+     word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+.pagination
+{
+    width: 100%;
+}
+#info
+{
+   display: none;
+position: absolute;
+left: 50%;
+top: 50%;
+
+}
+#bg2{
+   display: none;
+}
+
+@media only screen and (max-width: 500px){ 
+
+
+   #bg2{
+     display: block;
+   }
+}
+
+@media only screen and (max-width: 500px){ 
+
+   #bg1{
+     display: none;
+   }
+
+}
+@media only screen and (max-width: 473px){
+
+    .btn{
+        padding:0px !important;
+    }
+
+}
+@media only screen and (max-width: 767px){
+
+    #head-news{
+        margin-left:-20px !important;
+    }
+
+}
+@media only screen and (max-width: 435px){
+
+    .btn{
+        float:left !important;
+    }
+
+}
+.content-text
+{
+    margin-bottom: 15px;
+}
+.carousel
+{
+        border: 1px solid #ddd;
+            margin-left: 15px;
+    margin-right: 15px;
+}
+#jumbocontact {
+
+color: black;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF;
+}
+#contact
+{
+    color:white;
+}
+textarea {
+    resize: none;
+}
+.newsinfo
+{
+   background-color: #4E5D6C;
+    margin: 5px 5px 5px 0px;
+    padding: 5px;
+
+}
+.newsfont
+{
+    font-family: 'Arial Narrow', sans-serif;
+}
+#head-news
+{
+    margin-left:9px !important;
+}
